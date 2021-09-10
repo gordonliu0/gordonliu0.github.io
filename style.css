@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+}
+
+html {
+    scroll-padding-top: 100px;
+}
+
+/*BUTTONS*/
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin: 0;
+    border-bottom: solid;
+    border-width: 1px;
+    border-color:#8F91A2;
+    position: sticky;
+    z-index: 999999;
+    top: 0;
+    width: 100%;
+    background-color: #1E2025;
+}
+
+.nav-div {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.nav-div .nav-links{
+    text-decoration: none;
+    color: #fff;
+    border-bottom: solid;
+    border-width: 5px;
+    border-color: #1E2025;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .10rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding: auto;
+    transition: all .2s ease-in-out; 
+}
+
+.nav-div .nav-links:hover{
+    transform: scale(1.1);
+}
+
+.nav-container img{
+    margin: 15px 30px;
+}
+
+.hero {
+    background-image: url(/images/Skyline.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100% 100%;
+    height: 80vh;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content{
+    margin: auto;
+    display: flex;
+    height: 80vh;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: brightness(.5);
+}
+
+.hero h1{
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 5rem;;
+    color: #fff;
+    border-bottom: solid;
+    border-color: #fff;
+    border-width: 1px;
+    padding-bottom: 20px;
+    width: 60vw;
+    margin-bottom: 40px;
+}
+
+.about {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about h3{
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    font-size: 2rem;
+}
+.about hr{
+    size: 1px;
+    width: 60vw;
+    color: black;
+    margin: 40px 0;
+} 
+.about p{
+    font-family: "Montserrat", sans-serif;
+    width: 60vw;
+    letter-spacing: .05rem;
+}
+
+.about-content {
+    height: 40vh;
+}
+
+.properties {
+    margin: auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 40vh;
+    justify-content: center;
+}
+
+.properties a{
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-size: cover;
+    filter: saturate(0);
+    text-decoration: none;
+}
+
+.properties .interface{
+    background-image: url("/images/Interface.PNG");
+}
+
+.properties .colleyville{
+    background-image: url("/images/Colleyville.PNG");
+}
+
+.properties .plano{
+    background-image: url("/images/Plano.PNG");
+}
+
+.properties .carrollton{
+    background-image: url("/images/Carrollton.PNG");
+}
+
+.properties .coming_soon{
+    background-image: url("/images/Skyline.png");
+}
+
+.properties a:hover{
+    filter: saturate(1);
+}
+
+.properties a div{
+    display: flex;
+    align-items: center;
+    background-color: #1E2025;
+    height: 10%;
+    transition: all .5s;
+}
+
+.properties a:hover div{
+    background-color:#537AED;
+    height: 20%;
+    transition: all .5s;
+    text-decoration: none;
+}
+
+.properties h4{
+    margin: 0;
+    width: 100%;
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-style: none;
+    text-decoration: none;
+    font-size: 1.3rem;
+    letter-spacing: .10rem;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    vertical-align: middle;
+}
+
+.contact{
+    height: 80vh;
+    background-color: #537AED;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact h1{
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 5rem;;
+    color: #fff;
+}
+
+.contact_form {
+    width: 80vw;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+}
+
+form{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: width 0.4s ease-in-out;
+}
+
+.form-control::placeholder{
+    color: white;
+}
+
+input {
+    transition: width 0.4s ease-in-out;
+}
+  
+input:focus {
+    backdrop-filter: brightness(.5);
+}
+
+input[type="submit"]:focus {
+    backdrop-filter: brightness(1);
+}
+
+textarea:focus {
+    backdrop-filter: brightness(.5);
+}
+
+form .submit{
+    background: white;
+    margin-top: 20px;
+    border-color: transparent;
+    color: #537AED;
+    width: 400px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.form-control{
+    background: transparent;
+    width: 100%;
+    margin: 0;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    border-radius: 5px;
+    text-align: left;
+}
+
+footer{
+    background-color: #1E2025;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: #47484d;
+}
